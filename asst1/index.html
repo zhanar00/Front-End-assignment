@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-label">Enter Name</div>
+                <div class="form-input"><input type="text" name="name" required></div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Enter Password</div>
+                <div class="form-input"><input type="password" name="password" required></div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Enter Address</div>
+                <div class="form-input"><textarea name="address" rows="2" required></textarea></div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Select Game</div>
+                <div class="form-input">
+                    <label><input type="checkbox" name="game" value="Hockey"> Hockey</label>
+                    <label><input type="checkbox" name="game" value="Football"> Football</label>
+                    <label><input type="checkbox" name="game" value="Badminton"> Badminton</label>
+                    <label><input type="checkbox" name="game" value="Cricket"> Cricket</label>
+                    <label><input type="checkbox" name="game" value="Volleyball"> Volleyball</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Gender</div>
+                <div class="form-input">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Select your age</div>
+                <div class="form-input">
+                    <select name="age" required>
+                        <option value="">Select</option>
+                        <option value="<10"><10</option>
+                        <option value="10-14">10-14</option>
+                        <option value="15-18">15-18</option>
+                        <option value="19-23">19-23</option>                       
+                        <option value="24+">24+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Select Photo</div>
+                <div class="form-input"><input type="file" name="photo"></div>
+            </div>
+            <div class="form-row buttons">
+                <button type="button">Click Me</button>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
